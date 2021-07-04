@@ -164,12 +164,38 @@ img {
   align-items: center;
 }
 
-/* .work-img {
-
-} */
+.work-img {
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  margin-bottom: 0.5rem;
+}
 
 .work-info {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(5px);
+  border-radius: 0.7rem;
+  transition: 0.3s;
+}
+
+.work-img:hover .work-info {
+  top: 0;
+}
+
+.easybank-img {
+  border-radius: 0.7rem;
+}
+
+.runbuddy-img {
+  border-radius: 0.7rem;
 }
 
 @media screen and (min-width: 576px) {
