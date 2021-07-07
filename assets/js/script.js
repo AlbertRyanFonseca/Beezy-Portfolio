@@ -20,3 +20,24 @@ function linkAction() {
 }
 
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+const section = document.querySelectorAll('section[id]')
+
+window.addEventListener('scroll', scrollOn)
+
+function scrollOn() {
+    const scrollY = window.pageYOffset
+
+    section.forEach(current => {
+        const sectionHeight = current.offsetHeight
+        const sectionTop = current.offsetTop - 50;
+
+        sectionId = current.getAttribute('id')
+
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.add('on')
+        } else {
+            document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.remove('on')
+        }
+    })
+}
