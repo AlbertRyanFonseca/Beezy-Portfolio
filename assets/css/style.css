@@ -41,6 +41,10 @@ img {
   display: block;
 }
 
+footer {
+  background-color: var(--main-color);
+}
+
 .base-grid {
   display: grid;
   grid-template-columns: 100%;
@@ -86,6 +90,11 @@ img {
   height: 3rem;
 }
 
+.nav-logo {
+  color: var(--white);
+  font-size: 1.3rem;
+}
+
 .nav-menu {
   position: fixed;
   top: 3rem;
@@ -109,11 +118,6 @@ img {
 
 .nav-link:hover {
   color: var(--accent-color);
-}
-
-.nav-logo {
-  color: var(--white);
-  font-size: 1.3rem;
 }
 
 .nav-toggle {
@@ -143,7 +147,7 @@ img {
 }
 
 .hero-info {
-  height: calc(100vh - 3rem);
+  height: calc(100vh - 2.5rem);
   row-gap: 5rem;
 }
 
@@ -177,6 +181,10 @@ img {
   right: -10;
   bottom: 0;
   margin-left: 5rem;
+}
+
+.work {
+  padding-top: 2rem;
 }
 
 .work-container {
@@ -216,8 +224,16 @@ img {
   border-radius: 0.7rem;
 }
 
+.takefive-img {
+  border-radius: 0.7rem;
+}
+
 .runbuddy-img {
   border-radius: 0.7rem;
+}
+
+.about {
+  padding-top: 2rem;
 }
 
 .about-container {
@@ -231,12 +247,98 @@ img {
 
 .social-icons {
   font-size: 1.5rem;
-  margin: 2rem;
-  letter-spacing: 1rem;
+  padding: 0.2rem;
+  margin-top: 1rem;
+}
+
+.social-icon {
+  padding: 2rem;
 }
 
 .social-icon:hover {
   color: var(--accent-color);
+}
+
+.contact {
+  padding-top: 2rem;
+}
+
+.contact-container {
+  row-gap: 2rem;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.2rem;
+}
+
+.contact-input {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  border: 1.5px solid var(--main-color);
+  border-radius: 0.4rem;
+  font-family: var(--body-font);
+}
+
+.contact-button {
+  display: block;
+  padding: 0.7rem 1.8rem;
+  margin-left: auto;
+  margin-bottom: 2rem;
+  font-family: var(--body-font);
+  background-color: var(--main-color);
+  color: var(--white);
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  background-color: var(--accent-color);
+}
+
+.footer-section {
+  font-family: var(--main-font);
+  text-align: center;
+}
+
+.footer-title {
+  margin-top: 1.5rem;
+  color: var(--white);
+}
+
+.footer-social {
+  margin-top: 1rem;
+}
+
+.footer-icon {
+  color: var(--white);
+  font-size: 1.7rem;
+  padding: 1.5rem;
+  margin: 0;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5rem;
+}
+
+.footer-navitem {
+  color: var(--white);
+}
+
+.footer-navitem:first-child {
+  margin-top: 1rem;
+}
+
+.footer-copy {
+  font-size: 0.85rem;
+  color: var(--white);
+  margin: 1rem 0;
 }
 
 @media screen and (min-width: 576px) {
