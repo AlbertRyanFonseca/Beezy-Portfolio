@@ -97,8 +97,8 @@ footer {
 
 .nav-menu {
   position: fixed;
-  top: 3rem;
-  right: -100%;
+  top: 3.5rem;
+  right: -85%;
   width: 80%;
   height: 100%;
   padding: 2rem;
@@ -180,7 +180,7 @@ footer {
   width: 21em;
   right: -10;
   bottom: 0;
-  margin-left: 5rem;
+  margin-left: 2rem;
 }
 
 .work {
@@ -198,7 +198,7 @@ footer {
   position: relative;
   overflow: hidden;
   width: 80%;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .work-info {
@@ -260,7 +260,7 @@ footer {
 }
 
 .contact {
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 .contact-container {
@@ -342,6 +342,81 @@ footer {
 }
 
 @media screen and (min-width: 576px) {
+  .sec-title {
+    font-size: 2rem;
+  }
+
+  .sec-title::after {
+    top: 3rem;
+    height: 0.25rem;
+    width: 4.5rem;
+  }
+
+  .nav {
+    height: 3.5rem;
+  }
+
+  .nav-logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-toggle {
+    font-size: 1.9rem;
+  }
+
+  .hero-img {
+    right: 0;
+  }
+
+  .scroll-more {
+    font-size: 1.35rem;
+  }
+
+  .work-title {
+    font-size: 1.5rem;
+  }
+
+  .work-desc {
+    font-size: 1.4rem;
+  }
+
+  .github,
+  .page {
+    font-size: 1.8rem;
+  }
+
+  .about-desc {
+    font-size: 1.3rem;
+  }
+
+  .social-icons {
+    font-size: 2.1rem;
+  }
+
+  .contact-input {
+    padding: 0.8rem;
+  }
+
+  .contact-button {
+    padding: 0.9rem 2.1rem;
+    font-size: 0.9rem;
+  }
+
+  .footer-title {
+    font-size: 1.2rem;
+  }
+
+  .footer-icon {
+    font-size: 1.9rem;
+  }
+
+  .footer-nav {
+    font-size: 1.2rem;
+  }
+
+  .footer-copy {
+    font-size: 0.9rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
