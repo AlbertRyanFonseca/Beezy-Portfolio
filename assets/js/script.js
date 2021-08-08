@@ -41,3 +41,25 @@ function scrollOn() {
         }
     })
 }
+
+// Scroll Reveal
+
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '70px',
+    duration: 2000,
+    reset: true
+});
+
+sr.reveal('.hero-title', {});
+sr.reveal('.hero-more', { origin: 'left', delay: 200 });
+sr.reveal('.hero-img', { origin: 'right', delay: 400 });
+
+sr.reveal('.work-img', { origin: 'bottom', interval: 200 });
+
+sr.reveal('.about-desc', {});
+sr.reveal('.social-icon', { delay: 200, interval: 200 });
+
+sr.reveal('.contact-info', { interval: 150 });
+sr.reveal('.contact-input', { origin: 'bottom', delay: 200 });
+sr.reveal('.contact-button', { origin: 'bottom', delay: 400 });
