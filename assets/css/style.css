@@ -42,6 +42,7 @@ img {
 }
 
 footer {
+  padding-top: 2rem;
   background-color: var(--main-color);
 }
 
@@ -198,11 +199,11 @@ footer {
 .work-img {
   position: relative;
   overflow: hidden;
-  width: 80%;
+  width: 90%;
 }
 
 .work-img:not(:last-child) {
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
 }
 
 .work-info {
@@ -217,7 +218,7 @@ footer {
   line-height: 2.1rem;
   background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(20px);
-  border-radius: 0.7rem;
+  border-radius: 0.5rem;
   transition: 0.5s;
 }
 
@@ -241,7 +242,7 @@ footer {
 }
 
 .portfolio-img {
-  border-radius: 0.7rem;
+  border-radius: 0.5rem;
 }
 
 .about {
@@ -318,7 +319,6 @@ footer {
 }
 
 .footer-title {
-  margin-top: 1.5rem;
   color: var(--white);
 }
 
@@ -345,6 +345,10 @@ footer {
 
 .footer-navitem:first-child {
   margin-top: 1rem;
+}
+
+.footer-navitem:last-child {
+  margin-bottom: 1rem;
 }
 
 .footer-copy {
