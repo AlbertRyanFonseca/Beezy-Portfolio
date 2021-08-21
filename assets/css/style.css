@@ -218,6 +218,7 @@ footer {
   line-height: 2.1rem;
   background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-radius: 0.5rem;
   transition: 0.5s;
 }
@@ -358,6 +359,51 @@ footer {
 }
 
 @media screen and (min-width: 576px) {
+  .sec-title {
+    font-size: 1.5rem;
+  }
+
+  .sec-title::after {
+    top: 2.25rem;
+    width: 4.5rem;
+  }
+
+  .hero-title {
+    font-size: 6.75rem;
+  }
+
+  .scroll-more {
+    font-size: 1.15rem;
+  }
+
+  .work-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 1.5rem;
+    align-items: unset;
+  }
+
+  .work-img {
+    width: 100%;
+  }
+
+  .about-desc {
+    font-size: 1.15rem;
+  }
+
+  .social-icons {
+    font-size: 2.2rem;
+  }
+
+  .contact-input {
+    font-size: 1.1rem;
+  }
+
+  .contact-button {
+    padding: 0.8rem 1.9rem;
+    font-size: 1.01rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
